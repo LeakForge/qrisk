@@ -5,6 +5,7 @@ body {
 
 .loading-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
@@ -29,6 +30,49 @@ body {
   font-family: 'Cinzel';
   font-size: 2rem;
   margin: 0px;
+  margin-bottom: 2rem;
   padding: 0px;
   animation: fadeIn 2s forwards;
+}
+
+@keyframes delayedFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.delayed-fade-in {
+  font-family: 'Cinzel';
+  font-size: 2rem;
+  margin: 0px;
+  margin-bottom: 2rem;
+  padding: 0px;
+  opacity: 0;
+  animation: delayedFadeIn 2s forwards;
+  animation-delay: 2s;
+}
+
+.delayed-fade-in-img {
+  font-family: 'Cinzel';
+  font-size: 2rem;
+  margin: 0px;
+  margin-bottom: 2rem;
+  padding: 0px;
+  opacity: 0;
+  animation: delayedFadeIn 2s forwards;
+  animation-delay: 2s;
+}
+
+.loading-container img {
+  margin: 0px;
+  padding: 0px;
+}
+
+@media only screen and (max-width: 675px) {
+  .loading-container .fade-in-text {
+    font-size: 0.85rem;
+  }
+
+  .loading-container .delayed-fade-in {
+    font-size: 0.85rem;
+  }
 }
