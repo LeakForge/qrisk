@@ -65,3 +65,7 @@ The project uses CSS variables for easy theming. Main colors can be modified in 
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+
+## QR Code for Demonstration
+![QR Code for the website](https://github.com/user-attachments/assets/f5fbc2fe-e1d5-46e4-8165-58c6afae0a8b)
+
